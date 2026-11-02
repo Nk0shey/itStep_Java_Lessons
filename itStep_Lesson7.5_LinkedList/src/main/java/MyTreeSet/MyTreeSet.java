@@ -96,7 +96,7 @@ public class MyTreeSet<T extends Comparable<T>> implements MySet<T> {
 
     @Override
     public boolean contains(T element) {
-        return containsRecursive(root, element);
+        return element != null && containsRecursive(root, element);
         // Подсказка:
         // 1. Используйте рекурсивный метод для поиска элемента в дереве.
         // 2. Если элемент найден, верните true. Если нет — false.

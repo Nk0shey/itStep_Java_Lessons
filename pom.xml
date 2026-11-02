@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>dev.nk0shey</groupId><artifactId>java-lessons</artifactId><version>1.0-SNAPSHOT</version><packaging>pom</packaging>
+  <properties><maven.compiler.release>17</maven.compiler.release><project.build.sourceEncoding>UTF-8</project.build.sourceEncoding></properties>
+  <modules>
+    <module>itStep_Lesson10.1_LambdaExpressions</module>
+    <module>itStep_Lesson10.2_LambdaExpressions</module>
+    <module>itStep_Lesson11_Files</module>
+    <module>itStep_Lesson12_StreamAPI</module>
+    <module>itStep_Lesson13.2_Threads</module>
+    <module>itStep_Lesson14_VersionControlSystems</module>
+    <module>itStep_Lesson4.2_ForEachLoops</module>
+    <module>itStep_Lesson5.1_StringReverse</module>
+    <module>itStep_Lesson5.4_ArraySearch</module>
+    <module>itStep_Lesson6.2</module>
+    <module>itStep_Lesson6.3_TestMethods</module>
+    <module>itStep_Lesson7.1_List</module>
+    <module>itStep_Lesson7.2_List</module>
+    <module>itStep_Lesson7.5_LinkedList</module>
+    <module>itStep_Lesson8_ErrorsAndExemptions</module>
+    <module>itStep_Lesson9.1_Stack</module>
+    <module>itStep_Lesson9.2_JavaCollectionFramework</module>
+  </modules>
+  <dependencies><dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>5.10.2</version><scope>test</scope></dependency></dependencies>
+  <build><pluginManagement><plugins>
+    <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>3.13.0</version></plugin>
+    <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>3.2.5</version></plugin>
+  </plugins></pluginManagement></build>
+</project>

@@ -13,6 +13,7 @@ public class Stack1<E> implements Deque<E> {
 
     // Конструктор для задания максимального размера стека
     public Stack1(int maxSize) {
+        if (maxSize < 1) throw new IllegalArgumentException("Capacity must be positive");
         this.maxSize = maxSize;
         this.stack = new ArrayDeque<>(maxSize);
     }
@@ -38,17 +39,17 @@ public class Stack1<E> implements Deque<E> {
 
     @Override
     public boolean remove(Object o) {
-        return false;
+        return stack.remove(o);
     }
 
     @Override
     public boolean contains(Object o) {
-        return false;
+        return stack.contains(o);
     }
 
     @Override
     public int size() {
-        return 0;
+        return stack.size();
     }
 
     // Проверка, является ли стек пустым
